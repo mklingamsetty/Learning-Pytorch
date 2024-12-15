@@ -52,7 +52,7 @@ def trainAndTest(model, y_pred, x_train, x_test, y_train, y_test):
             
         # 3. Calculate the loss
         test_loss = loss(y_pred, y_test)
-        print(f'Epoch {epoch} Training Loss: {train_loss.item()} Testing Loss: {test_loss.item()}')
+        print(f'Epoch {epoch} Training Loss: {train_loss.item()} Testing Loss: {test_loss.item()}' if epoch % 100 == 0 else '', end='\r')
         
     plotGraph(x_train, y_train, x_test, y_test, y_pred)
         
