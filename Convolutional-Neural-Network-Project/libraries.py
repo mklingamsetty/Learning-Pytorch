@@ -12,6 +12,7 @@ from torchvision.transforms import Compose, ToTensor, Resize
 from tqdm.auto import tqdm
 from timeit import default_timer as timer
 from torchinfo import summary
+import matplotlib.pyplot as plt
 
 # Hyperparameters and Constants
 BATCH_SIZE = 32
